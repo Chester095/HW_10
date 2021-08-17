@@ -34,11 +34,13 @@ public class ArrayHW {
         Map<String, Integer> map1 = new HashMap<>();
         for (String s: arrayList) {
             if (map1.containsKey(s)) {
+
                 int i=map1.get(s);
                 map1.put(s, ++i);
             }
-            else  map1.put(s,1);
+            else  {map1.put(s,1); System.out.print(s + " ");}
         }
+        System.out.println();
         return map1;
     }
 
